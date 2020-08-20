@@ -1,9 +1,11 @@
+#Task Manager
+
 In the project directory, you can run:
 
-## Project initialization:
+## **Project initialization:**
 
 ### `npm start`
 
-## Start project:
+## **Start project:**
 
 ### `npm run start`
