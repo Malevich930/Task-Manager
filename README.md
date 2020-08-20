@@ -5,7 +5,7 @@ In the project directory, you can run:
 
 **Project initialization:**
 
-`npm start`
+`npm install`
 
 **Start project:**
 
