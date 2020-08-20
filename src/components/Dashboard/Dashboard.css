@@ -192,6 +192,21 @@ a.link, button {
     border-radius: 18px;
     border: 1px solid #cfcece;
   }
+
+  .modal > .close:hover {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 10px 10px;
+    line-height: 20px;
+    right: -8px;
+    top: -10px;
+    font-size: 24px;
+    background:  #ee2222;
+    box-shadow: 0 4px #990000;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
   
   .form-warn {
     display: block;
