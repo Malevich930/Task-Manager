@@ -40,7 +40,6 @@ class Dashboard extends React.Component {
 
 
   async delete(ID) {
-
     await fetch(`https://test.megapolis-it.ru/api/list/${ID}`, {
       method: 'DELETE',
     });
@@ -57,7 +56,6 @@ class Dashboard extends React.Component {
 
 
   render() {
-
 
     return (
       <>
@@ -86,7 +84,6 @@ class Dashboard extends React.Component {
                                 <button onClick={() => this.addTask(this.state.name)}>Добавить</button>
                               </a> : <button onClick={() => this.addTask(this.state.name)}>Добавить</button>
                               }
-
                             </div>
                           </div>
                         </div>

@@ -8,15 +8,14 @@ class Task extends React.Component {
   constructor(props) {
     super(props)
 
-
     this.state = {
       name: this.props.taskEdit,
       edit: false
     }
   }
 
+  
   async editTask(name) {
-
     await fetch(`https://test.megapolis-it.ru/api/list/${this.props.id}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json; charset = utf-8' },
@@ -33,14 +32,13 @@ class Task extends React.Component {
   }
 
   async delete() {
-
     await fetch(`https://test.megapolis-it.ru/api/list/${this.props.id}`, {
       method: 'DELETE',
     });
     const ID = Number(this.props.id)
     const newArr = this.props.tasks.filter((item) => item.id !== ID)
     this.props.deleteTask(newArr)
-    
+
   }
 
 
@@ -72,7 +70,7 @@ class Task extends React.Component {
                   <h1 class="header-title-entry">Задача №{this.props.id}</h1>
                 </div>
                 <div class="header-adding">
-                <Link to="/"><button class="delete" onClick={() => this.delete()}>Удалить</button></Link>
+                  <Link to="/"><button class="delete" onClick={() => this.delete()}>Удалить</button></Link>
                 </div>
               </div>
               <div class="main">
@@ -107,7 +105,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addEditTask: (payload) => dispatch(addEditTask(payload)),
     deleteTask: (payload) => dispatch(deleteTask(payload))
-    
+
   }
 }
 
