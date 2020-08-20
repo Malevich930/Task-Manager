@@ -5,8 +5,8 @@ In the project directory, you can run:
 
 **Project initialization:**
 
-### `npm start`
+`npm start`
 
 **Start project:**
 
-### `npm run start`
+`npm run start`
